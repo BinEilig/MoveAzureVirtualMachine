@@ -354,7 +354,7 @@ function CreateVMStorageAccount{
 	$stgName = $config.DestinationResourceGroup.ToLower() + $vmInfo.Region.ToLower() + "diag"
 	
 	# remove all special characters and convert to lower cases
-	$stgName = $stgName -Replace('[^a-zA-Z0-9]','') # remove special charaters
+	$stgName = $stgName -Replace('[^a-zA-Z0-9]','')
 	$stgName = $stgName.ToLower()
 
 	if($stgName.Length -gt 23)

@@ -1,8 +1,8 @@
 {
-	"SubscriptionId" : "SOURCE_SUBSCRIPTION_ID",
-	"ResourceGroup" : "SOURCE_SUBSCRIPTION_RESOURCE_GROUP",
-	"VirtualMachine" : "SOURCE_MACHINE",
-	"DestinationSubscriptionId" : "DESTINATION_SUBSCRIPTION_ID",
-	"DestinationResourceGroup" : "DESTINATION_SUBSCRIPTION_RESOURCE_GROUP",
-	"DestinationVirtualNetworkName" : "DESTINATION_SUBSCRIPTION_VIRTUAL_NETWORK"
+	"SubscriptionId" : "e7213533-172e-4fa0-b391-6819425caf3d",
+	"ResourceGroup" : "aci-rg",
+	"VirtualMachine" : "aci-ubuntu",
+	"DestinationSubscriptionId" : "f1766449-2b4d-4cd7-b839-398a9fa368cf",
+	"DestinationResourceGroup" : "rg.vDCtarget",
+	"DestinationVirtualNetworkName" : "vDCtarget-vnet"
 }

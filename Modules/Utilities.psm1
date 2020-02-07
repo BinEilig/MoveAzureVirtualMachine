@@ -353,12 +353,15 @@ function CreateVMStorageAccount{
 	
 	$stgName = $config.DestinationResourceGroup.ToLower() + $vmInfo.Region.ToLower() + "diag"
 	
+	# remove all special characters and convert to lower cases
+	$stgName = $stgName -Replace('[^a-zA-Z0-9]','') # remove special charaters
+	$stgName = $stgName.ToLower()
+
 	if($stgName.Length -gt 23)
 	{ 
 		$stgName = $stgName.SubString(0,18) + "diag"
 	}
-	
-	
+		
 	$result = New-AzureRmStorageAccount -ResourceGroupName $config.DestinationResourceGroup -AccountName $stgName -Location $vmInfo.Region -SkuName Standard_LRS -Kind StorageV2 -AccessTier Hot
 	
 	$stgName

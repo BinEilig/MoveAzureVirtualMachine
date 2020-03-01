@@ -1,0 +1,8 @@
+{
+	"SubscriptionId" : "12bd69a3-e3b6-4693-a9ca-0270cba54f6e",
+	"ResourceGroup" : "prxwdp-p01",
+	"VirtualMachine" : "sap-px-wdp02",
+	"DestinationSubscriptionId" : "9fa25574-b7a3-41c2-8455-172e08b9f3a0",
+	"DestinationResourceGroup" : "temp_transfer",
+	"DestinationVirtualNetworkName" : "sap01-dev-vn01"
+}

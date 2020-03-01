@@ -81,7 +81,6 @@ class MoveDiskConfiguration {
 		Parameters:
 			configurationFile - The path of a local file containing the configuration 
 								options.
-								
 		Returns:
 			Instance of MoveConfiguration
 	#>
@@ -100,5 +99,5 @@ class MoveDiskConfiguration {
 		$returnConfig.DestinationResourceGroup = $configuration['DestinationResourceGroup']
 
 		return $returnConfig
-	}		
+	}
 }
